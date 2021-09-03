@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.png">
+		</div>
+
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.png">
+				<h2 class="title">INVERNADERO</h2>
+
+				<h4>Humedad:</h4>
+
+           		<div class="input-div one">
+           		   <div class="i">
+					<i class="fas fa-water"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5 id="postElement1">0 %</h5>
+           		   </div>
+           		</div>
+
+				<h4>Temperatura:</h4>
+
+           		<div class="input-div one">
+           		   <div class="i"> 
+					 <i class="fas fa-thermometer-three-quarters"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5 id="postElement2">0ºC -------> 0ºF</h5>
+            	   </div>
+            	</div>
+
+				<h4>Índice de calor:</h4>
+
+				<div class="input-div one">
+					<div class="i"> 
+						<i class="fas fa-sun"></i>
+					</div>
+					<div class="div">
+						 <h5 id="postElement3">0ºC -------> 0ºF</h5>
+				 </div>
+			  </div>
+
+            	<input type="button" onclick="lampara()" class="btn" value="On/Off" id="boton">
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+	
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyDUGQoR5Gd5ESex_X-Uir-vUbJEvW7Etig",
+ 		authDomain: "invernadero-7ef04.firebaseapp.com",
+		 databaseURL: "https://invernadero-7ef04-default-rtdb.firebaseio.com/",
+  		projectId: "invernadero-7ef04",
+  		storageBucket: "invernadero-7ef04.appspot.com",
+  		messagingSenderId: "716134433795",
+  		appId: "1:716134433795:web:9d948d1a0d439d88ec7a36"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
